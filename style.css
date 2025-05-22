@@ -76,13 +76,19 @@
         color: var(--color-slate-500);
         font-size: 15px;
         line-height: 1.4;
-        text-wrap: balance;
     }
 }
 
-/* This breakpoint is for small screens, typically mobile devices */
 @media (width >= 375px) {
     .card {
         max-width: 320px;
+    }
+}
+
+@media (width <= 374px) {
+    .card {
+        p {
+            text-wrap: balance;
+        }
     }
 }
