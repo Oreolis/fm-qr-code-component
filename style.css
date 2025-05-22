@@ -30,6 +30,9 @@
     body {
         font-family: var(--font-outfit);
         background-color: var(--color-slate-300);
+    }
+
+    main {
         height: 100vh;
         display: grid;
         place-items: center;
@@ -41,14 +44,11 @@
         margin: 0;
     }
 
-    figure {
+    img {
+        border-radius: calc(var(--radius) / 2);
+        display: block;
         margin-bottom: 10px;
-
-        img {
-            border-radius: calc(var(--radius) / 2);
-            display: block;
-            width: 100%;
-        }
+        width: 100%;
     }
 
     h2, p {
